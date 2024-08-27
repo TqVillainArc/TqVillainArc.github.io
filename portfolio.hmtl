@@ -1,0 +1,54 @@
+
+
+<hmtl> 
+  <head>
+   
+   <title> TQ's Terrific Website </title>
+   <link rel="stylesheet" Href="style.css"> </link>  
+     
+  </head>
+
+  <body>
+  <div id= "all-contents">
+  
+  </div>
+ </body> 
+</hmtl>
+
+<div id= "all-contents">
+
+ <nav>
+   <h1> TQ's Terrific Website </h1>
+   
+   <ul id="nav-ul".
+    
+    <li class="nav-li">
+    
+    <a class="nav-a" href="index.html"> Home </a>
+
+   </li>
+
+   <li class="nav-li>
+
+    <a class="nav-a" Href="portfolio.html"> Portfolio</a>
+  </li>
+
+  </ul>
+</nav>
+
+<main> 
+ <div class="content>
+  </div>
+</main>
+
+</div>
+
+<h1> Portfolio </h1>
+
+<ul id="portfolio" </ul>
+
+<li> <a href="projects/TQ/"> TQ : What I love to do - Play games, Make music </a></li>
+
+<li> <a href="Projects/My interest Anime/Roblox/Cod/Djing/Making music/drawing/clothing designs"> </a></li>     
+
+

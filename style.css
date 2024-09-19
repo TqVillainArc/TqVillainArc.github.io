@@ -54,7 +54,7 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px silver ridge;
+    border: 4px rgb(255, 148, 148) ridge;
     padding: 8px;
 }
 h2, h3 {
@@ -72,7 +72,7 @@ h2, h3 {
 }
 
 #portfolio li {
-    background: #fff;
+    background: #ba0b0b;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -84,5 +84,5 @@ h2, h3 {
 
 #portfolio a {
     text-decoration: none;
-    color: #454545;
+    color: #000000;
 }

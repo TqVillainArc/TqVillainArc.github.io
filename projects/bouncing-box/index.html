@@ -7,9 +7,9 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 70px;
-			height: 70px;
-			background-color: teal;
+			width: 80px;
+			height: 80px;
+			background-color: rgb(255, 40, 16);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -17,8 +17,9 @@
 			position: absolute;
 			top: 100px;
 			/* Change me! */
-			left: 0px;
-		}
+			left:90px;
+			
+		}  
 
 		.board {
 			height: 100vh;
@@ -49,11 +50,11 @@
 			setInterval(update, 50);
 
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
-			box.on('click', handleBoxClick);
+			box.on('click', handleBoxClick) ;
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX) {1000;
-				box.css("left", newPositionX); 10000;
+			function moveBoxTo(newPositionX) {;
+				box.css("left", newPositionX); ;
 			}
 
 			// changes the text displayed on the Box
@@ -66,37 +67,40 @@
 			//////////////////////////////////////////////////////////////////
 
 			// TODO 2 - Variable declarations 
-
-           myVariable = 1000;
-           // When you first create the Variable...
 var positionX = 0;
+var points = 0;
+var speed = 10;
+
+		   
+           // When you first create the Variable...
+var positionX = 10;
 
 // during update...
-frame1
-positionX = 0 + 100; // positionX = 100
-moveBoxTo(100);
 
-frame2
-positionX = 100 + 100; // positionX = 200
-moveBoxTo(200);
-frame3
-positionX = 200 + 200; // positionX = 400
-moveBoxTo(400);
+positionX = 0 + 10; 
+moveBoxTo(positionX);
 
-frame4
-positionX = 400 + 400; // positionX = 800
-moveBoxTo(800);
+
+
+
 
 // so on...
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
-			*/
+			*/ 
 			function update() {
-            moveBoxTo(1700);
-			moveBoxTo(1000);
-		};
+		   /* Your Code to increase by 10 HERE*/
+		 positionX = positionX + speed;
+		 moveBoxTo(positionX);
+		 if (positionX > boardWidth)
+		   speed = -speed
+		if (positionX < 0)
+		speed = 5
+		}; 
+
+
 
 
 			/* 
@@ -104,8 +108,13 @@ moveBoxTo(800);
 			it should increase the points total, increase the speed, and move the box to
 			the left side of the screen.
 			*/
-			function handleBoxClick()  {
-  positionX = 0;
+function handleBoxClick()  {
+    positionX = 0;
+	 points= points + 1;
+	 changeBoxText(points);
+	 speed = speed + 3;
+	
+	
 }
 
 

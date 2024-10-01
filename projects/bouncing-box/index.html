@@ -94,10 +94,24 @@ moveBoxTo(positionX);
 		   /* Your Code to increase by 10 HERE*/
 		 positionX = positionX + speed;
 		 moveBoxTo(positionX);
-		 if (positionX > boardWidth)
-		   speed = -speed
-		if (positionX < 0)
-		speed = 5
+		 if (positionX > boardWidth){
+			speed = -speed;
+		 }
+		   
+		else if (positionX < 0) {
+			speed = -speed;
+			
+		}
+		if (positionX > boardWidth){
+			changDirectionOfTheBox 
+			
+	
+		}
+       if (coditionIsTrue) {
+		changDirectionOfTheBox
+	   }
+	  if (positionX < theMinimumXCoordinateOfTheScreen);
+
 		}; 
 
 
@@ -112,7 +126,7 @@ function handleBoxClick()  {
     positionX = 0;
 	 points= points + 1;
 	 changeBoxText(points);
-	 speed = speed + 3;
+	 speed = speed + 99;
 	
 	
 }

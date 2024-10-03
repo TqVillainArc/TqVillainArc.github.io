@@ -105,7 +105,7 @@ moveBoxTo(positionX);
 		if (positionX > boardWidth){
 			changDirectionOfTheBox 
 			
-	
+	    
 		}
        if (coditionIsTrue) {
 		changDirectionOfTheBox
@@ -126,9 +126,13 @@ function handleBoxClick()  {
     positionX = 0;
 	 points= points + 1;
 	 changeBoxText(points);
-	 speed = speed + 99;
-	
-	
+	 speed += 3;
+	if (speedIsAPositiveNumber){
+		add3ToSpeed;
+	}
+ else if (speedIsAPositiveNumber){
+	subtract3FromSpeed;
+ }
 }
 
 
